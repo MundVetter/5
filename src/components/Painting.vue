@@ -47,7 +47,7 @@ export default {
 <style scoped lang="stylus">
     .grid
         display grid
-        grid-template-columns 1fr
-        grid-template-rows 1fr
+        grid-template-columns 1fr 1fr 1fr 1fr 1fr
+        width 500px
 </style>
 

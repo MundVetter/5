@@ -3,7 +3,8 @@
 </template>
 
 <script>
-const color = ['#cc3524', '#0e28a5', '#0d773b', '#030216', '#e8e1e7']
+//                red        blue      green       black     white
+const color = ['#bf3500', '#0e28a5', '#0d773b', '#030216', '#e8e1e7']
 export default {
     name: 'Tile',
     props: {
