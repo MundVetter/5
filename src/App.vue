@@ -1,11 +1,6 @@
 <template>
   <div id="app">
-    <!-- <tile class="box" :color-type=0></tile>
-    <tile class="box" :color-type=1></tile>
-    <tile class="box" :color-type=2></tile>
-    <tile class="box" :color-type=3></tile>
-    <tile class="box" :color-type=4></tile> -->
-    <painting :colors=[1,2,3,4,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0]></painting>
+    <painting></painting>
   </div>
 </template>
 
@@ -18,6 +13,10 @@ export default {
   components: {
     Tile,
     Painting
+  },
+  mounted: function () {
+    if(window.location.hash)
+      return
   }
 }
 </script>

@@ -21,7 +21,6 @@ export default {
   },
   methods: {
     update: function(num) {
-      console.log(this.index);
       this.$store.commit({
         type: "setColor",
         colorType: num,
