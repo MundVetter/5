@@ -1,8 +1,7 @@
 <template>
 <div>
     <div class="grid">
-    <tile :v-for="(color, index) in colors" :color-type="color" ></tile>
-    <!-- <tile :colorType="colors[0]"  v-on:click.native="showPicker(0)"></tile>
+    <tile :colorType="colors[0]"  v-on:click.native="showPicker(0)"></tile>
     <tile :colorType="colors[1]"  v-on:click.native="showPicker(1)"></tile>
     <tile :colorType="colors[2]"  v-on:click.native="showPicker(2)"></tile>
     <tile :colorType="colors[3]"  v-on:click.native="showPicker(3)"></tile>
@@ -26,7 +25,7 @@
     <tile :colorType="colors[21]" v-on:click.native="showPicker(21)"></tile>
     <tile :colorType="colors[22]" v-on:click.native="showPicker(22)"></tile>
     <tile :colorType="colors[23]" v-on:click.native="showPicker(23)"></tile>
-    <tile :colorType="colors[24]" v-on:click.native="showPicker(24)"></tile> -->
+    <tile :colorType="colors[24]" v-on:click.native="showPicker(24)"></tile>
     </div>
     <color-picker class="colorPicker" :selected=color :index=index></color-picker>
 </div>
