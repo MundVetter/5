@@ -64,7 +64,7 @@ export default {
 }
 
 .colorPicker {
-  position: absolute;
+  margin-top: 20px;
 }
 </style>
 
