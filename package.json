@@ -12,6 +12,7 @@
   "dependencies": {
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
+    "vue-focus": "^2.1.0",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

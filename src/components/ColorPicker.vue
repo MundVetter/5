@@ -44,7 +44,7 @@ export default {
       const colorType = parseInt(event.key) - 1;
       if (colorType < 0 || colorType > 4) return;
 
-      this.update(colorType)
+      this.update(colorType);
     });
   }
 };
