@@ -15,8 +15,12 @@ export default {
     Painting
   },
   mounted: function () {
-    if(window.location.hash)
-      return
+    // this.$store.commit('setWords', ['world', 'world', 'world', 'world', 'pupal'])
+    const hash = window.location.hash
+    if(hash) {
+      const words = hash.slice(1).split('-')
+      this.$store.commit('setWords', words)
+    }
   }
 }
 </script>

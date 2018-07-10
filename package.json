@@ -10,6 +10,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "array-pad": "0.0.1",
     "big-integer": "^1.6.32",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
