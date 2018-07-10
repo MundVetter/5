@@ -31,45 +31,47 @@
 </div>
 </template>
 <script>
-import Tile from './Tile.vue'
-import ColorPicker from './ColorPicker.vue'
+import Tile from "./Tile.vue";
+import ColorPicker from "./ColorPicker.vue";
 
 export default {
-    name: 'Painting',
-    data: function () {
-        return {
-            color: 0,
-            index: 0
-        }
-    },
-    components: {
-        Tile,
-        ColorPicker
-    },
-    methods: {
-        showPicker: function (index) {
-            this.color = this.colors[index]
-            this.index = index
-        }
-    },
-    computed: {
-        colors: function () {
-            return this.$store.state.colors
-        }
-        // color: function () {
-        //     return this.$store.state.colors[this.index]
-        // }
+  name: "Painting",
+  data: function() {
+    return {
+      color: 0,
+      index: 0
+    };
+  },
+  components: {
+    Tile,
+    ColorPicker
+  },
+  methods: {
+    showPicker: function(index) {
+      this.color = this.colors[index];
+      this.index = index;
     }
-}
+  },
+  computed: {
+    colors: function() {
+      return this.$store.state.colors;
+    }
+    // color: function () {
+    //     return this.$store.state.colors[this.index]
+    // }
+  }
+};
 </script>
 
 <style scoped lang="stylus">
-    .grid
-        display grid
-        grid-template-columns 1fr 1fr 1fr 1fr 1fr
-        width 500px
-    
-    .colorPicker
-        position absolute
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 500px;
+}
+
+.colorPicker {
+    position: absolute;
+}
 </style>
 

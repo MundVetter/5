@@ -38,7 +38,14 @@ export default {
     }
   },
   mounted: function() {
-    //   window.
+    window.addEventListener("keydown", event => {
+      if (isNaN(event.key)) return;
+
+      const colorType = parseInt(event.key) - 1;
+      if (colorType < 0 || colorType > 4) return;
+
+      
+    });
   }
 };
 </script>
