@@ -56,9 +56,6 @@ export default {
     colors: function() {
       return this.$store.state.colors;
     }
-    // color: function () {
-    //     return this.$store.state.colors[this.index]
-    // }
   }
 };
 </script>
