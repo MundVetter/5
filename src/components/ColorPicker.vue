@@ -51,21 +51,28 @@ export default {
 
 <style scoped lang="stylus">
 .colorPicker {
-    background-color: #030216;
+  background-color: #030216;
 }
 
 .prev {
-    width: 500px;
+  width: 500px;
 }
 
 a {
-    background-color: white;
+  background-color: white;
 }
 
 .options {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 500px;
 }
+
+@media screen and (max-width: 700px)
+  .options 
+    width 100vmin
+
+  .prev
+    width 100vmin
 </style>
 

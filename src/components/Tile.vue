@@ -27,21 +27,26 @@ export default {
 
 <style scoped lang="stylus">
 button {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 a {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    font-size: 3em;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 3em;
 }
 
 .viewer {
-    border: 0px;
+  border: 0px;
 }
 
 .viewer:focus {
-    outline: none;
+  outline: none;
 }
+
+@media screen and (max-width: 700px)
+  button
+    width 20vmin
+    height 20vmin
 </style>

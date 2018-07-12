@@ -39,4 +39,9 @@ body
   display flex
   justify-content center
   padding 100px
+
+@media screen and (max-width: 700px)
+  #app
+    padding 0px
+    display block
 </style>

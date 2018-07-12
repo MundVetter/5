@@ -57,14 +57,17 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 500px;
-}
+.grid
+  display grid
+  grid-template-columns 1fr 1fr 1fr 1fr 1fr
+  width 500px
 
-.colorPicker {
-  margin-top: 20px;
-}
+.colorPicker
+  margin-top 20px
+
+@media screen and (max-width: 700px)
+  .grid
+    width 100vmin
+    height 100vmin
 </style>
 
