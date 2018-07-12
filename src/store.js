@@ -12,13 +12,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    colors: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    colors: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    hash: ''
   },
   mutations: {
     setColor: function (state, payload) {
       Vue.set(state.colors, payload.index, payload.colorType)
-      console.log(state.colors)
-      window.location.hash = decode(state.colors).join('-')
+      state.hash = decode(state.colors).join('-')
+      window.location.hash = state.hash
     },
     setWords: function (state, words) {
       state.colors = pad(encode(words.slice(0, 5)).slice(0, 25), -25, 0)
