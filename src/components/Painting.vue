@@ -3,7 +3,7 @@
     <div class="grid">
     <tile v-for="{color, id} in colors"
         :key="id" :color-type="color" 
-        @focus.native="showPicker(id)"
+        @click.native.passive="showPicker(id)"
         @keydown.up.native="move('up', id)"
         @keydown.down.native="move('down', id)"
         @keydown.left.native="move('left', id)"
