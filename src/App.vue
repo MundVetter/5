@@ -17,15 +17,13 @@ export default {
   mounted: function () {
     this.updatePainting(window.location.hash)
     window.addEventListener('hashchange', () => {
-      if(window.location.hash.slice(1) === this.$store.state.hash) return
+      if (window.location.hash.slice(1) === this.$store.state.hash) return
       this.updatePainting(window.location.hash)
     })
-
   },
   methods: {
     updatePainting: function (hash) {
-      if(!hash)
-        return
+      if (!hash) { return }
       const words = hash.slice(1).split('-')
       this.$store.commit('setWords', words)
     }

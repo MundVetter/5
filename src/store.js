@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import db from './db'
-import { toBaseHuman, toBaseFive } from './baseHuman';
+import { toBaseHuman, toBaseFive } from './baseHuman'
 import bigInt from 'big-integer'
 import pad from 'array-pad'
 

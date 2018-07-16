@@ -12,41 +12,41 @@
 </template>
 
 <script>
-import Tile from "./Tile.vue";
+import Tile from './Tile.vue'
 
 export default {
-  name: "ColorPicker",
+  name: 'ColorPicker',
   props: {
     index: Number
   },
   methods: {
-    update: function(num) {
+    update: function (num) {
       this.$store.commit({
-        type: "setColor",
+        type: 'setColor',
         colorType: num,
         index: this.index
-      });
+      })
     }
   },
   components: {
     Tile
   },
   computed: {
-    color: function() {
-      return this.$store.state.colors[this.index];
+    color: function () {
+      return this.$store.state.colors[this.index]
     }
   },
-  mounted: function() {
-    window.addEventListener("keydown", event => {
-      if (isNaN(event.key)) return;
+  mounted: function () {
+    window.addEventListener('keydown', event => {
+      if (isNaN(event.key)) return
 
-      const colorType = parseInt(event.key) - 1;
-      if (colorType < 0 || colorType > 4) return;
+      const colorType = parseInt(event.key) - 1
+      if (colorType < 0 || colorType > 4) return
 
-      this.update(colorType);
-    });
+      this.update(colorType)
+    })
   }
-};
+}
 </script>
 
 <style scoped lang="stylus">
@@ -69,10 +69,9 @@ a {
 }
 
 @media screen and (max-width: 700px)
-  .options 
+  .options
     width 100vmin
 
   .prev
     width 100vmin
 </style>
-

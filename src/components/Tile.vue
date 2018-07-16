@@ -6,9 +6,9 @@
 
 <script>
 //              white        black     red       green        blue
-const color = ["#e8e1e7", "#030216", "#bf3500", "#00d75d", "#0e28a5"];
+const color = ['#e8e1e7', '#030216', '#bf3500', '#00d75d', '#0e28a5']
 export default {
-  name: "Tile",
+  name: 'Tile',
   props: {
     colorType: {
       type: Number,
@@ -18,11 +18,11 @@ export default {
     isViewer: Boolean
   },
   computed: {
-    color: function() {
-      return color[this.colorType];
+    color: function () {
+      return color[this.colorType]
     }
   }
-};
+}
 </script>
 
 <style scoped lang="stylus">
